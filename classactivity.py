@@ -1,13 +1,10 @@
 class Student:
     def __init__(self, name, grade):
         self.name = name 
-        self.grade = grade
+        self.grade = grade   
     
-    def __str__(self):
-        return f"{self.name}({self.grade})"
+    def myfunc(self):
+        print("My name is " + self.name)
 
 p1 = Student("Sarah", 9)
-
-print(p1)
-
-#DNF
+p1.myfunc()
